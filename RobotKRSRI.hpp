@@ -1,14 +1,21 @@
 #ifndef __ROBOTKRSRI_HPP__
 #define __ROBOTKRSRI_HPP__
 
-#include ...
+#include <iostream>
+#include "Robot.hpp"
+#include "Boneka.hpp"
+using namespace std;
 
 class RobotKRSRI: public Robot {
     // access modifier:
         // lengkapi atribut
         // Boneka* boneka; (hanya jika mengerjakan bonus)
+    private:
+        int jumlah_kaki;
+        Boneka* boneka;
 
     // access modifier:
+    public:
         // default constructor: atribut nama dibebaskan, status OFF, jumlah kaki dibebaskan
         RobotKRSRI();
 
@@ -29,7 +36,7 @@ class RobotKRSRI: public Robot {
 
         // Mencetak "Boneka dengan nama <nama_boneka> telah diambil" jika status robot ON
         // Method ini dibuat hanya jika mengerjakan bonus
-        void ambilBoneka(Boneka*);
+        void ambilBoneka(Boneka* boneka);
 
         // Mencetak "Robot sedang berjalan" jika status robot ON
         void jalan();

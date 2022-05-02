@@ -1,13 +1,19 @@
 #ifndef __ROBOT_HPP__
 #define __ROBOT_HPP__
 
-#include ...
+#include <iostream>
+#include "State.hpp"
+using namespace std;
 
 class Robot {
     // access modifier:
         // lengkapi atribut
+    protected:
+        string nama;
+        state status;
     
     // access modifier:
+    public:
         // default constructor: atribut nama dibebaskan, status OFF
         Robot();
 

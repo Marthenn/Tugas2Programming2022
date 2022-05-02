@@ -2,13 +2,17 @@
 #define __BONEKA_HPP__
 
 // DIBUAT HANYA JIKA MENGERJAKAN BONUS
-#include ...
+#include <iostream>
+using namespace std;
 
 class Boneka {
     // access modifier:
         // lengkapi atribut
+    private:
+        string nama;
     
     // access modifier:
+    public:
         // default constructor: atribut nama dibebaskan
         Boneka();
 
